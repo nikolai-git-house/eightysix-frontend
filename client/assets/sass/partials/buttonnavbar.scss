@@ -1,0 +1,69 @@
+.button-navbar {
+  color: #ccc;
+  background: $navbar-background;
+  margin: 0px;
+
+  [class^='col-'] {
+    text-align: center;
+  }
+
+  padding: 10px;
+  [class^='col-'] {
+    text-align: center;
+  }
+  a,
+  .btn-link {
+    padding: 0px;
+    color: $icon-in-active-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font: $icon-btn-font;
+    display: inline-block;
+    text-align: center;
+
+    &.border-left {
+      border-left: $btn-group-border;
+      padding-left: 10px;
+    }
+
+    &.border-right {
+      border-right: $btn-group-border;
+      padding-right: 10px;
+    }
+
+    > .glyphicon {
+      display: block;
+    }
+
+    &:focus,
+    &:focus.active {
+      text-decoration: none;
+      outline: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.active-button-navbar {
+      color: $icon-active-color;
+    }
+
+    i {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+  }
+
+  @media (max-width: 920px) {
+    .sub-title {
+      display: none;
+    }
+  }
+
+  .center-button {
+    text-align: center;
+    min-height: 43px;
+  }
+}

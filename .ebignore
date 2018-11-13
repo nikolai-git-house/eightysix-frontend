@@ -1,0 +1,13 @@
+# Files
+.env
+Procfile
+app.json
+static.json
+.dockerignore
+
+# Directories
+node_modules/
+.git/
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

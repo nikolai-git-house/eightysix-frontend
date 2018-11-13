@@ -1,0 +1,20 @@
+{
+  "background_color": "#fff",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "name": "Eighty Six",
+  "short_name": "86",
+  "start_url": "index.html",
+  "theme_color": "#51cf66"
+}

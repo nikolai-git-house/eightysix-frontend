@@ -1,0 +1,111 @@
+$fa-font-path: "/fonts/font-awesome";
+@import "~font-awesome/scss/font-awesome";
+@import "partials/home";
+@import "partials/hero";
+@import "partials/blog";
+@import "partials/contact";
+@import "partials/services";
+@import "partials/partners";
+@import "partials/header";
+@import "partials/howitworks";
+@import "partials/footer";
+@import "partials/login";
+@import "partials/customerproduct";
+@import "partials/buttonnavbar";
+@import "partials/notes";
+@import "partials/searchpanel";
+@import "partials/navpanel";
+@import "partials/alert";
+@import "partials/usersettings";
+
+@import "common/navbar";
+@import "common/table";
+@import "common/bootstrap";
+@import "common/fonts";
+
+#root{
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+  line-height: 1.15;
+  text-size-adjust: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+a {
+  color: #529d8f;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #0effff;
+    text-decoration: none;
+}
+
+.btn-modal-success {
+  background: #3bcbab;
+  color: #fff;
+  outline: none;
+  display: block;
+  width: 100%;
+  font-family: 'SFUIDisplay-Regular', sans-serif;
+}
+
+.btn-modal-success:hover, .btn-modal-success:active, .btn-modal-success:focus {
+  color: #fff;
+  outline: none;
+  background: #3bcbab;
+  text-decoration: none;
+}
+
+.btn-modal-danger {
+  background-color: #94a9b3;
+  color: #fff;
+  outline: none;
+  display: block;
+  width: 100%;
+  font-family: 'SFUIDisplay-Regular', sans-serif;
+}
+
+.btn-modal-danger:hover, .btn-modal-danger:active, .btn-modal-danger:focus {
+  color: #fff;
+  outline: none;
+  background: #94a9b3;
+  text-decoration: none;
+}
+
+ul {
+  margin-bottom: 0px;
+ }
+
+@media (min-width: 767px) {
+
+ .header-mobile-signIn-btn{
+    display: none;
+ }
+}

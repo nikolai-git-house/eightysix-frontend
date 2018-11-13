@@ -1,0 +1,16 @@
+@mixin alert {
+  color: white;  
+  width: 100%;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.success-alert {
+  @include alert;
+  background-color: green;
+}
+
+.error-alert {
+  @include alert;
+  background-color: red;
+}

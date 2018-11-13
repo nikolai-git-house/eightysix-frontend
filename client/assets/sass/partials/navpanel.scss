@@ -1,0 +1,75 @@
+.nav-panel {
+
+  @mixin link-style {
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    padding: 20px 0px 20px 20%;
+    & a {
+      color: white;
+    }
+    & span {
+      padding-left: 20px;
+    }
+    &:hover {
+      background-color: #009f7b;
+    }
+  }
+
+  > .nav-content {
+    margin-top: 120px;
+    border-top: 1px solid #55ae99;
+    > .nav-link {
+      @include link-style;
+      border-bottom: 1px solid #55ae99;
+    }
+  }
+
+  > header {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    background-color: #3bcbab;
+    padding-bottom: 20px;
+    > .nav-buttons {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      > i {
+        padding: 15px;
+        color: white;
+        cursor: pointer;
+        &:hover {
+          background-color: #009f7b;
+        }
+      }
+    }
+    > img {
+      display: block;
+      margin: 0 auto;
+      height: 30px;
+    }
+  }
+
+  > footer {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    width: 100%;
+    background-color: #3bcbab;
+    > .nav-link {
+      @include link-style;
+      border-top: 1px solid #55ae99;
+      border-bottom: 1px solid #55ae99;
+    }
+    > p {
+      font-size: 10px;
+      text-align: center;
+      color: white;
+      padding: 10px 0px;
+    }
+  }
+}

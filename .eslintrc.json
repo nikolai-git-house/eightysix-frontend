@@ -1,0 +1,43 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true,
+      "spread": true,
+      "experimentalObjectRestSpread": true
+    },
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./build/webpack.common.js"
+      }
+    }
+  },
+  "rules": {
+    "react/jsx-indent": ["error", 2],
+    "react/require-default-props": [0, { "forbidDefaultForRequired": false }],
+    "react/no-array-index-key": 0,
+    "react/forbid-prop-types": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/label-has-for": 0,
+    "no-shadow": 0
+  }
+}

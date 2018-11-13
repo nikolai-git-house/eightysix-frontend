@@ -1,0 +1,14 @@
+export { default as NotFound } from './NotFound';
+export { default as Hero } from './Hero';
+export { default as Blog } from './Blog';
+export { default as Footer } from './Footer';
+export { default as HomeNav } from './HomeNav';
+export { default as Services } from './Services';
+export { default as Contact } from './Contact';
+export { default as Partners } from './Partners';
+export { default as HowItWorks } from './HowItWorks';
+export { default as LoginForm } from './LoginForm';
+export { default as ResetPasswordForm } from './ResetPasswordForm';
+export { default as SignUpForm } from './SignUpForm';
+export { default as OrderDetail } from './OrderDetail';
+export { default as ButtonNavBar } from './ButtonNavBar';

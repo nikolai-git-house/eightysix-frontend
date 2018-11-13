@@ -1,0 +1,186 @@
+.divider {
+  background-color: #529d8f;
+  margin: 0 auto;
+  position: absolute;
+  top: -57px;
+  width: 98%;
+}
+
+.tagLine {
+ margin-bottom: 40px;
+}
+
+.aboutTitle {
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 2;
+  text-align: center;
+  width: 100%;
+  left: 0px;
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 56.25em){
+  .aboutTitle {
+    font-size: 4.1rem;
+  }
+}
+
+.aboutDescription {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 3.5rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 56.25em){
+  .aboutDescription {
+    font-size: 2.7rem;
+    padding: 10px;
+  }
+}
+
+.descriptionBlue {
+  color: #529d8f;
+}
+
+.benifit {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.benifitTitleSmall {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 56.25em){
+  .benifitTitleSmall {
+    font-size: 2rem;
+  }
+}
+
+.benifitDivider {
+  background-color: #529d8f;
+  border: none;
+  height: 1px;
+  margin: 50px auto;
+  text-align: center;
+  width: 100px;
+}
+
+.benifitImageOne {
+  background-image: url('/img/overdue.png');
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 210px, 229px;
+  height: 250px;
+  margin: 20px auto;
+  width: 229px;
+}
+
+.benifitImageTwo {
+  background-image: url('/img/laptop.png');
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 210px, 229px;
+  height: 165px;
+  margin: 20px auto;
+  width: 240px;
+}
+
+.benifitImageThree {
+  background-image: url('/img/clock.png');
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 210px, 229px;
+  height: 234px;
+  margin: 20px auto;
+  width: 235px;
+}
+
+.services-element {
+  color: #fff;
+  background-color: #000;
+  min-height: 100%;
+  position: relative;
+  padding: 4.8rem 1.2rem;
+  padding-top: 0px !important;
+  padding-bottom: 40px !important;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  top: 10px;
+}
+
+@media screen and (min-width: 56.25em){
+  .services-element {
+    padding: 9.6rem 2.4rem;
+  }
+}
+
+.services-content {
+  position: relative;
+  width: 100%;
+}
+
+.titleBig {
+  font-size: 2.7rem;
+  font-style: italic;
+  font-weight:700;
+  text-align: center;
+}
+
+@media screen and (min-width: 56.25em){
+  .titleBig {
+    font-size: 3.7rem;
+  }
+}
+
+.titleBigLogo {
+  font-size: 2.7rem;
+  font-style: italic;
+  font-weight:700;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 56.25em){
+  .titleBigLogo {
+    font-size: 3.7rem;
+    padding: 0px;
+    height: 28px;
+    line-height: 28px;
+  }
+}
+
+.services-title {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+}
+
+@media screen and (min-width: 56.25em){
+  .services-title {
+    font-size: 2.7rem;
+  }
+}
+
+.description {
+  font-size: var(--description-lg);
+  text-align: center;
+}
+
+@media screen and (min-width: 56.25em){
+  .description {
+    font-size: var(--description-xl);
+  }
+}

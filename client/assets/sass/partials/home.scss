@@ -1,0 +1,51 @@
+@import "../common/vars";
+
+body {
+  font-family: var(--font-family-rubik);
+}
+
+.home-element{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home-content{
+  background-color: #010108;
+  flex-grow: 1;
+  height: calc(100% - 4.2rem);
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 56.25em){
+  .home-content{
+    height: calc(100% - 7.4rem);
+  }
+}
+
+.blue-title {
+  color: #529d8f;
+}
+
+.up-arrow {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  z-index: 1000;
+  height: 75px;
+  margin: 0 auto;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  font-size: 75px;
+  color: #529d8f;
+}
+
+.full-divider {
+  background-color: #529d8f;
+  border: none;
+  height: 1px;
+  margin: 10px auto;
+  text-align: center;
+  width: 95%;
+}

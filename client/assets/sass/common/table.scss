@@ -1,0 +1,84 @@
+.ReactTable {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+  background-color: #F1F1F1;
+  padding: 0px 40px;
+  @media (max-width: 767px) {
+    padding: 0px;
+  }
+
+  & .rt-table {
+
+    & .rt-thead {
+      color: #9B9B9B;
+      box-shadow: none !important;
+
+      & .rt-th {
+        line-height: 50px;
+        box-shadow: none;
+        border: none;
+      }
+    }
+
+    & .rt-tbody {
+
+      & .rt-tr-group {
+        border-bottom: solid 2px rgba(0,0,0,0.05);
+        border-right: solid 2px rgba(0,0,0,0.05);
+        border-radius: 5px;
+        margin: 5px 0px;
+        background-color: white;
+      }
+
+      & .rt-td {
+        border-right: 1px solid white;
+      }
+    }
+  }
+}
+
+.table-no-data {
+  min-height: 250px;
+}
+
+.row-single-value {
+  line-height: 30px;
+  text-align: center;
+}
+
+.row-title {
+  font-size: 12px;
+}
+
+.row-subtitle {
+  font-size: 10px
+}
+
+.row-notes {
+  text-align: left;
+  white-space: pre;
+}
+
+.green-chevron {
+  color: #3BCBAB;
+}
+
+.white-chevron {
+  color: #BABABA;
+}
+
+// TODO: Move below css to other files
+
+.spinner {
+  text-align: center;
+  padding: 10px;
+}
+
+.hiddden {
+  display: none;
+}
+
+.waypoint {
+  margin-bottom: 20px
+}

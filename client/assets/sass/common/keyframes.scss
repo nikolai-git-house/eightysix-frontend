@@ -1,0 +1,51 @@
+@import "./vars";
+@import "./mixins";
+
+/* Animation */
+@include keyframes(big-square_shrink) {
+  0%,
+  90% {
+    @include transform(scale(1));
+  }
+
+  100% {
+    @include transform(scale(.5));
+  }
+}
+
+@include keyframes(drop4) {
+  0% {
+    @include transform(translateY(-50px));
+  }
+
+  75%,
+  100%{
+    @include transform(translate(0));
+  }
+}
+
+@include keyframes(ico-scrolldown) {
+  0%,
+  30%,
+  42%,
+  100% {
+    bottom: 28px;
+  }
+
+  33% {
+    bottom: 33px;
+  }
+
+  38% {
+    bottom: 23px;
+  }
+}
+@include keyframes(fadeEffect) {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,17 @@
+branch-defaults:
+  development:
+    environment: eightysix-app-dev
+  production:
+    environment: eightysix-app-prod
+global:
+  application_name: eightysix
+  default_ec2_keyname: David
+  default_platform: Node.js
+  default_region: eu-west-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  sc: git
+  workspace_type: Application

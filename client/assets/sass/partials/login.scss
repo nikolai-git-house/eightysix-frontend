@@ -1,0 +1,85 @@
+.login-page {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(6, 35, 18, 0.35), rgba(0, 193, 14, 0.15)), url('/img/header-background-lg.jpg');
+  background-size: cover;
+  height: 100%;
+  background-color: #060;
+  right: 0;
+}
+
+.form-button-elementSuccess{
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  font-weight: 500;
+  padding: .9rem 1.2rem;
+  text-align: center;
+  transition-duration: .3s, .3s, .3s;
+  transition-property: background-color, box-shadow, color;
+  width: 100%;
+  border-color: #37b24d;
+  color: #fff !important;
+  background-color: #51cf66 !important;
+}
+
+.sign-in-wrapper {
+  width: 600px!important;
+  margin: 0!important;
+  position: relative;
+  left: 480px;
+  top: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sign-in-row .sign-in-content {
+  position: fixed;
+  overflow: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline: none;
+}
+
+@media (min-width: 992px) {
+  .sign-in-wrapper .sign-in-row .sign-in-content {
+      float: none;
+      max-width: 410px;
+  }
+}
+
+.sign-in-box {
+  background-color: #010108;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+
+.login-logo {
+  width: 195px;
+}
+
+.error-message {
+  font-size: 12px;
+  line-height: 12px;
+  color: #f44336;
+  background-color: #fff;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  margin: 10px 0px;
+  padding: 5px;
+  border: 1px solid red;
+}
+
+.login-error {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid red;
+  font-weight: bold;
+  margin: 10px;
+  margin-top: 0px;
+}

@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'SFUIDisplay-Bold';
+  src: url("./assets/fonts/SFUIDisplay/bold/SFUIDisplay-Bold.eot");
+  src: url("./assets/fonts/SFUIDisplay/bold/SFUIDisplay-Bold.woff2") format("woff2"), url("./assets/fonts/SFUIDisplay/bold/SFUIDisplay-Bold.woff") format("woff"), url("./assets/fonts/SFUIDisplay/bold/SFUIDisplay-Bold.ttf") format("truetype"), url("./assets/fonts/SFUIDisplay/bold/SFUIDisplay-Bold.svg#SFUIDisplay-Bold") format("svg"), url("./assets/fonts/SFUIDisplay/bold/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }

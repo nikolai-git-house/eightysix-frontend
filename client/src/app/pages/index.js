@@ -1,0 +1,10 @@
+export { default as Home } from './Home';
+export { default as Login } from './Login';
+export { default as ResetPassword } from './ResetPassword';
+export { default as SignUp } from './SignUp';
+export { default as CustomerIndex } from './CustomerIndex';
+export { default as UserSettings } from './UserSettings';
+export { default as CustomerProfile } from './CustomerProfile';
+export { default as CustomerProducts } from './CustomerProfile/CustomerProducts';
+export { default as CustomerNotes } from './CustomerProfile/CustomerNotes';
+export { default as CustomerTransactions } from './CustomerProfile/CustomerTransactions';

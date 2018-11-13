@@ -1,0 +1,32 @@
+.footer-element {
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.footer-logo {
+  width: 195px;
+}
+
+.copyright {
+  font-size: 1.7rem;
+  font-style: italic;
+  font-weight: 100;
+  text-align: left;
+}
+
+.private-footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #529d8f;
+    color: #fff;
+}
+
+.navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}

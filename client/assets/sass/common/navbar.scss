@@ -1,0 +1,75 @@
+// #############################################
+// Overriding css for the react-bootstrap navbar
+// #############################################
+
+.navbar-default {
+  background: #529d8f !important;
+  border-color: transparent !important;
+  margin-bottom: 0px !important;
+
+  a {
+    color: #fff;
+  }
+}
+
+.container {
+  width: 100% !important;
+}
+
+// Override bootstrap media widths
+.navbar-nav {
+  float: left !important;
+  margin: 0px !important;
+  
+  > li {
+    float: left;
+  }
+}
+
+// Override bootstrap media widths
+.navbar-right {
+  float: right !important;
+}
+
+.navbar-btn {
+  margin: 0px !important;
+  color: white;
+  background-color: #529d8f;
+  border: none;
+}
+
+.truncate-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+@media only screen and (max-width: 842px) {
+  .sign-in-btn {
+    a {
+      margin-top: -10px !important;
+      margin-bottom: 10px !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sign-in-btn {
+    a {
+      width: 91px;
+      height: 37px;
+      line-height: 7px !important;
+      background: linear-gradient(#bababa,#fff);
+      border: 1px solid #bababa;
+      border-radius: 5px;
+      margin-right: 10px;
+      color: #529d8f !important;
+      font-style: italic;
+      font-weight: 700;
+      padding: 15px !important;
+      margin-top: 7px;
+    }
+  }
+}
+

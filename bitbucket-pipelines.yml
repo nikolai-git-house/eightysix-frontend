@@ -1,0 +1,42 @@
+#Dockerfile
+
+image: eightysix/beanstalk_pipeline
+
+pipelines:
+  default:
+    - step:
+        name: Install and Test
+        deployment: test
+        script:
+          - npm install
+          - npm run jest
+          - npm run build
+
+  branches:
+    development:
+      - step:
+          name: Staging Test and Deploy
+          deployment: staging
+          script:
+            - npm install
+            - npm run jest
+            - sed -i "s|http://localhost:3000|$DEV_API_URL|g" package.json
+            - npm run build
+            - sed -i "s|<Access Key ID>|$AWS_ACCESS_KEY_ID|g" ~/.aws/config
+            - sed -i "s|<Secret Access Key>|$AWS_SECRET_ACCESS_KEY|g" ~/.aws/config
+            - sed -i "s|<API_URL>|$DEV_API_URL|g" .ebextensions/05-variables.config
+            - eb deploy eightysix-app-dev --nohang
+
+    master:
+      - step:
+          name: Production Test and Deploy
+          deployment: production
+          script:
+            - npm install
+            - npm run jest
+            - sed -i "s|http://localhost:3000|$PROD_API_URL|g" package.json
+            - npm run build
+            - sed -i "s|<Access Key ID>|$AWS_ACCESS_KEY_ID|g" ~/.aws/config
+            - sed -i "s|<Secret Access Key>|$AWS_SECRET_ACCESS_KEY|g" ~/.aws/config
+            - sed -i "s|<API_URL>|$PROD_API_URL|g" .ebextensions/05-variables.config
+            - eb deploy eightysix-app-prod --nohang
