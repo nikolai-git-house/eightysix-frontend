@@ -6,7 +6,7 @@ const { apiUrl } = api;
 
 export function attemptSignUp(data) {
   return axios.request({
-    url: `${apiUrl}/auth/sign-up`,
+    url: `${apiUrl}/signup`,
     method: "POST",
     withCredentials: true,
     headers: {
@@ -19,7 +19,7 @@ export function attemptSignUp(data) {
 
 export function attemptSignUpVerification(data) {
   return axios.request({
-    url: `${apiUrl}/auth/sign-up-verification`,
+    url: `${apiUrl}/signupVerification`,
     method: "POST",
     withCredentials: true,
     headers: {
@@ -32,7 +32,7 @@ export function attemptSignUpVerification(data) {
 
 export function attemptSignIn(data) {
   return axios.request({
-    url: `${apiUrl}/auth/sign-in`,
+    url: `${apiUrl}/signin`,
     method: "POST",
     withCredentials: true,
     headers: {
@@ -46,7 +46,7 @@ export function attemptSignIn(data) {
 export function attemptSignOut(data) {
   const idToken = localStorage.getItem(ID_TOKEN);
   return axios.request({
-    url: `${apiUrl}/auth/sign-out`,
+    url: `${apiUrl}/sign-out`,
     method: "POST",
     withCredentials: true,
     headers: {
@@ -60,7 +60,7 @@ export function attemptSignOut(data) {
 
 export function attemptRequestPasswordReset(data) {
   return axios.request({
-    url: `${apiUrl}/auth/password-reset`,
+    url: `${apiUrl}/password-reset`,
     method: "POST",
     withCredentials: true,
     headers: {
@@ -73,7 +73,7 @@ export function attemptRequestPasswordReset(data) {
 
 export function attemptSetNewPassword(data) {
   return axios.request({
-    url: `${apiUrl}/auth/password-confirm`,
+    url: `${apiUrl}/password-confirm`,
     method: "POST",
     withCredentials: true,
     headers: {

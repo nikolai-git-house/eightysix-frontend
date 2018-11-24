@@ -1,13 +1,13 @@
 const params = {
   development: {
-    apiUrl: `${process.env.API_URL}/api`,
+    apiUrl: `${process.env.API_URL}`
   },
   production: {
-    apiUrl: `${process.env.API_URL}/api`,
+    apiUrl: `${process.env.API_URL}`
   },
   test: {
-    apiUrl: 'http://localhost:5000/api',
-  },
+    apiUrl: "http://localhost:5000"
+  }
 };
 
-export default params[process.env.NODE_ENV || 'development'];
+export default params[process.env.NODE_ENV || "development"];
